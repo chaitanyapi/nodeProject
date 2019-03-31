@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel='stylesheet' href='/stylesheets/table.css' />
+  </head>
+  <body>
+
+<a href="/emplist"><button type="button">back</button></a>
+<form action='/addemp' method="POST" enctype="multipart/form-data">
+<h1>Enter Employee Details</h1>
+<table border="0">
+<tr>
+      <td><label name="empname">empname </label></td>
+      <td><input type="text" name="empname" /></td></tr>
+<tr>
+      <td><label name="emptype">emptype </label></td>
+      <td><input type="text" name="emptype" /></td></tr>
+<tr>
+      <td><label name="empnjoindate">empjoindate </label></td>
+      <td><input type="date" name="empjoindate" /></td></tr>
+<tr>
+      <td><label name="emppic">emppic </label></td>
+      <td><input type="file" name="emppic" /></td></tr>
+<tr>
+      <td><label name="empdept">empdept </label></td>
+      <td><input type="text" name="empdept" /></td></tr>
+<tr>
+      <td><label name="empbloodgroup">empbloodgroup </label></td>
+      <td><input type="text" name="empbloodgroup" /></td></tr>
+<tr>
+      <td><label name="empdesignation">empdesignation </label></td>
+      <td><input type="text" name="empdesignation" /></td></tr>
+<tr>
+      <td><label name="empdob">empdob </label></td>
+      <td><input type="date" name="empdob" /></td></tr>
+
+</tr>
+</table><br>
+      <input type="submit"/>
+    </form>
+  </body>
+</html>

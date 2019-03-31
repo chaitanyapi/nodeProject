@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel='stylesheet' href='/stylesheets/table.css' />
+  </head>
+  <body>
+
+<a href="/aptlist"><button type="button">back</button></a>
+<form action='/addinfo' method="POST" enctype="multipart/form-data">
+<h1>Enter Apartment Details</h1>
+<table border="0">
+<tr>
+
+<td><label name="aptname">aptname </label></td>
+<td><input type="text" name="aptname" /></td></tr>
+<tr>
+<td><label name="area">area </label></td>
+<td><select name="area" >
+      <option disabled selected value>  </option>
+      <option value="A S Rao Nagar">A S Rao Nagar</option>
+      <option value="Abdullapurmet">Abdullapurmet</option>
+      <option value="Abids">Abids</option>
+      <option value="Adarsh Nagar">Adarsh Nagar</option>
+      <option value="Adibatla">Adibatla</option>
+      <option value="Adikmet">Adikmet</option>
+      <option value="Afzal Gunj">Afzal Gunj</option>
+      <option value="Almasguda">Almasguda</option>
+      <option value="Alwal">Alwal</option>
+      <option value="Amberpet">Amberpet</option>
+      <option value="Ameenpur">Ameenpur</option>
+      <option value="Ameerpet">Ameerpet</option>
+      <option value="Anandbagh">Anandbagh</option>
+      <option value="Appa Junction">Appa Junction</option>
+      <option value="Attapur">Attapur</option>
+      <option value="Bachupally">Bachupally</option>
+      <option value="Badangpet">Badangpet</option>
+      <option value="Bahadurpally">Bahadurpally</option>
+      <option value="Bahadurpura">Bahadurpura</option>
+      <option value="Bairagiguda">Bairagiguda</option>
+      <option value="Bala Nagar">Bala Nagar</option>
+      <option value="Balapur">Balapur</option>
+      <option value="Bandlaguda">Bandlaguda</option>
+      <option value="Banjara Hills">Banjara Hills</option>
+      <option value="Basheerbagh">Basheerbagh</option>
+      <option value="Beeramguda">Beeramguda</option>
+      <option value="Begumpet">Begumpet</option>
+      <option value="Bhanur">Bhanur</option>
+      <option value="Bhogaram">Bhogaram</option>
+      <option value="Bhoiguda">Bhoiguda</option>
+      <option value="Bhongir">Bhongir</option>
+      <option value="Bhuvanagiri">Bhuvanagiri</option>
+      <option value="Bibinagar">Bibinagar</option>
+      <option value="BN Reddy Nagar">BN Reddy Nagar</option>
+      <option value="Boduppal">Boduppal</option>
+      <option value="Bolaram">Bolaram</option>
+      <option value="Borabanda">Borabanda</option>
+      <option value="Bowenpally">Bowenpally</option>
+      <option value="Bowrampet">Bowrampet</option>
+      <option value="Budvel">Budvel</option>
+      <option value="Burgul">Burgul</option>
+      <option value="Champapet">Champapet</option>
+      <option value="Chanda Nagar">Chanda Nagar</option>
+      <option value="Chandrayanagutta">Chandrayanagutta</option>
+      <option value="Cherlapally">Cherlapally</option>
+      <option value="Chevalla">Chevalla</option>
+      <option value="Chikkadapally">Chikkadapally</option>
+      <option value="Chilkur">Chilkur</option>
+      <option value="Chintal">Chintal</option>
+      <option value="Chintalkunta">Chintalkunta</option>
+      <option value="Chintapallyguda">Chintapallyguda</option>
+      <option value="Chowdhariguda">Chowdhariguda</option>
+      <option value="Dammaiguda">Dammaiguda</option>
+      <option value="Dasarlapally">Dasarlapally</option>
+      <option value="Dayara">Dayara</option>
+      <option value="Dhoolpet">Dhoolpet</option>
+      <option value="Dilsukhnagar">Dilsukhnagar</option>
+      <option value="Domalguda">Domalguda</option>
+      <option value="Dullapally">Dullapally</option>
+      <option value="Dundigal">Dundigal</option>
+      <option value="East Marredpally">East Marredpally</option>
+      <option value="ECIL">ECIL</option>
+      <option value="Edulanagulapalle">Edulanagulapalle</option>
+      <option value="Erragadda">Erragadda</option>
+      <option value="Falaknuma">Falaknuma</option>
+      <option value="Film Nagar">Film Nagar</option>
+      <option value="Financial District">Financial District</option>
+      <option value="Gachibowli">Gachibowli</option>
+      <option value="Gagillapur">Gagillapur</option>
+      <option value="Gajularamaram">Gajularamaram</option>
+      <option value="Gandhi Nagar">Gandhi Nagar</option>
+      <option value="Gandi Maisamma">Gandi Maisamma</option>
+      <option value="Gandipet">Gandipet</option>
+      <option value="Ghansi Bazar">Ghansi Bazar</option>
+      <option value="Ghatkesar">Ghatkesar</option>
+      <option value="Golkonda">Golkonda</option>
+      <option value="Gopanpally">Gopanpally</option>
+      <option value="Gudimalkapur">Gudimalkapur</option>
+      <option value="Gulshan-e-Iqbal Colony">Gulshan-e-Iqbal Colony</option>
+      <option value="Gundlapochampally">Gundlapochampally</option>
+      <option value="Gunrock Enclave">Gunrock Enclave</option>
+      <option value="Gurram Guda">Gurram Guda</option>
+      <option value="Habsiguda">Habsiguda</option>
+      <option value="Hafeezpet">Hafeezpet</option>
+      <option value="Hakimpet">Hakimpet</option>
+      <option value="Hanuman Nagar Colony">Hanuman Nagar Colony</option>
+      <option value="Hasmathpet">Hasmathpet</option>
+      <option value="Hastinapuram">Hastinapuram</option>
+      <option value="Hayat Nagar">Hayat Nagar</option>
+      <option value="Hi Tech City">Hi Tech City</option>
+      <option value="Himayath Nagar">Himayath Nagar</option>
+      <option value="Humayun Nagar">Humayun Nagar</option>
+      <option value="Hyder Nagar">Hyder Nagar</option>
+      <option value="Hyderguda">Hyderguda</option>
+      <option value="Ibrahimpatnam">Ibrahimpatnam</option>
+      <option value="Indresham">Indresham</option>
+      <option value="Isnapur">Isnapur</option>
+      <option value="Jalpally">Jalpally</option>
+      <option value="Jam Bagh">Jam Bagh</option>
+      <option value="Jawahar Nagar">Jawahar Nagar</option>
+      <option value="Jeedimetla">Jeedimetla</option>
+      <option value="Jeera">Jeera</option>
+      <option value="Jubilee Hills">Jubilee Hills</option>
+      <option value="Kachiguda">Kachiguda</option>
+      <option value="Kakaguda">Kakaguda</option>
+      <option value="Kalasiguda">Kalasiguda</option>
+      <option value="Kanchan Bagh">Kanchan Bagh</option>
+      <option value="Kandukur">Kandukur</option>
+      <option value="Kapra">Kapra</option>
+      <option value="Karkhana">Karkhana</option>
+      <option value="Karmanghat">Karmanghat</option>
+      <option value="Karwan">Karwan</option>
+      <option value="Katedan">Katedan</option>
+      <option value="Kavadiguda">Kavadiguda</option>
+      <option value="Kavuri Hills">Kavuri Hills</option>
+      <option value="Kazipally">Kazipally</option>
+      <option value="Keesara">Keesara</option>
+      <option value="Khairatabad">Khairatabad</option>
+      <option value="Kismatpur">Kismatpur</option>
+      <option value="Kokapet">Kokapet</option>
+      <option value="Kollur">Kollur</option>
+      <option value="Kompally">Kompally</option>
+      <option value="Kondapur">Kondapur</option>
+      <option value="Kongara Kalan">Kongara Kalan</option>
+      <option value="Kothaguda">Kothaguda</option>
+      <option value="Kothapet">Kothapet</option>
+      <option value="Kothur">Kothur</option>
+      <option value="Koti">Koti</option>
+      <option value="Kowkur">Kowkur</option>
+      <option value="KPHB">KPHB</option>
+      <option value="Kukatpally">Kukatpally</option>
+      <option value="Kushaiguda">Kushaiguda</option>
+      <option value="Lakdi Ka Pul">Lakdi Ka Pul</option>
+      <option value="Lal Darwaza">Lal Darwaza</option>
+      <option value="Lalapet">Lalapet</option>
+      <option value="Lallaguda">Lallaguda</option>
+      <option value="Langar Houz">Langar Houz</option>
+      <option value="LB Nagar">LB Nagar</option>
+      <option value="Lingampally">Lingampally</option>
+      <option value="Lothkunta">Lothkunta</option>
+      <option value="Madhapur">Madhapur</option>
+      <option value="Madhura Nagar">Madhura Nagar</option>
+      <option value="Madinaguda">Madinaguda</option>
+      <option value="Maheshwaram">Maheshwaram</option>
+      <option value="Maisireddipalle">Maisireddipalle</option>
+      <option value="Majarguda">Majarguda</option>
+      <option value="Malakpet">Malakpet</option>
+      <option value="Malkajgiri">Malkajgiri</option>
+      <option value="Mallampet">Mallampet</option>
+      <option value="Mallapur">Mallapur</option>
+      <option value="Manchirevula">Manchirevula</option>
+      <option value="Manikonda">Manikonda</option>
+      <option value="Manneguda">Manneguda</option>
+      <option value="Mansoorabad">Mansoorabad</option>
+      <option value="Maruti Nagar">Maruti Nagar</option>
+      <option value="Masab Tank">Masab Tank</option>
+      <option value="Mazidpur">Mazidpur</option>
+      <option value="Medak Road">Medak Road</option>
+      <option value="Medchal">Medchal</option>
+      <option value="Medipalli">Medipalli</option>
+      <option value="Meerpet">Meerpet</option>
+      <option value="Mehadipatnam">Mehadipatnam</option>
+      <option value="Mettuguda">Mettuguda</option>
+      <option value="Miyapur">Miyapur</option>
+      <option value="Moghalpura">Moghalpura</option>
+      <option value="Moinabad">Moinabad</option>
+      <option value="Mokila">Mokila</option>
+      <option value="Moosapet">Moosapet</option>
+      <option value="Moosarambagh">Moosarambagh</option>
+      <option value="Moti Ganpur">Moti Ganpur</option>
+      <option value="Moti Nagar">Moti Nagar</option>
+      <option value="Moula Ali">Moula Ali</option>
+      <option value="Musheerabad">Musheerabad</option>
+      <option value="Muthangi">Muthangi</option>
+      <option value="Mylargada">Mylargada</option>
+      <option value="Nacharam">Nacharam</option>
+      <option value="Nadergul">Nadergul</option>
+      <option value="Nagaram">Nagaram</option>
+      <option value="Nagarjuna Sagar Road">Nagarjuna Sagar Road</option>
+      <option value="Nagole">Nagole</option>
+      <option value="Nallagandla">Nallagandla</option>
+      <option value="Nallakunta">Nallakunta</option>
+      <option value="Nampally">Nampally</option>
+      <option value="Nanakramguda">Nanakramguda</option>
+      <option value="Nandigama">Nandigama</option>
+      <option value="Narayanguda">Narayanguda</option>
+      <option value="Narketpalli">Narketpalli</option>
+      <option value="Narsapur">Narsapur</option>
+      <option value="Narsingi">Narsingi</option>
+      <option value="Nawab Saheb Kunta">Nawab Saheb Kunta</option>
+      <option value="Neeladri Nagar">Neeladri Nagar</option>
+      <option value="Neredmet">Neredmet</option>
+      <option value="New Malakpet">New Malakpet</option>
+      <option value="New Mallepally">New Mallepally</option>
+      <option value="New Nallakunta">New Nallakunta</option>
+      <option value="Nizampet">Nizampet</option>
+      <option value="Nizampet Road">Nizampet Road</option>
+      <option value="NTR Nagar">NTR Nagar</option>
+      <option value="Old Bowenpally">Old Bowenpally</option>
+      <option value="Osman Nagar">Osman Nagar</option>
+      <option value="Osman Sagar Road">Osman Sagar Road</option>
+      <option value="Padma Rao Nagar">Padma Rao Nagar</option>
+      <option value="Pahadi Shareef">Pahadi Shareef</option>
+      <option value="Patancheru">Patancheru</option>
+      <option value="Patighanpur">Patighanpur</option>
+      <option value="Peerancheru">Peerancheru</option>
+      <option value="Peerzadiguda">Peerzadiguda</option>
+      <option value="Pochampally">Pochampally</option>
+      <option value="Pocharam">Pocharam</option>
+      <option value="Pragathi Nagar">Pragathi Nagar</option>
+      <option value="Prashanth Nagar">Prashanth Nagar</option>
+      <option value="Pulimamidi">Pulimamidi</option>
+      <option value="Punjagutta">Punjagutta</option>
+      <option value="Puppalaguda">Puppalaguda</option>
+      <option value="Quthbullapur">Quthbullapur</option>
+      <option value="Qutub Shahi Tombs">Qutub Shahi Tombs</option>
+      <option value="Rai Durg">Rai Durg</option>
+      <option value="Raikal">Raikal</option>
+      <option value="Raj Bhavan Road">Raj Bhavan Road</option>
+      <option value="Rajeev Nagar">Rajeev Nagar</option>
+      <option value="Rajendra Nagar">Rajendra Nagar</option>
+      <option value="Ram Nagar">Ram Nagar</option>
+      <option value="Ramakrishnapuram">Ramakrishnapuram</option>
+      <option value="Ramanthapur">Ramanthapur</option>
+      <option value="Ramchandra Puram">Ramchandra Puram</option>
+      <option value="Ramgopalpet">Ramgopalpet</option>
+      <option value="Ramoji Film City">Ramoji Film City</option>
+      <option value="Rampally">Rampally</option>
+      <option value="Rani Gunj">Rani Gunj</option>
+      <option value="Rasoolpura">Rasoolpura</option>
+      <option value="Rendlagadda">Rendlagadda</option>
+      <option value="Rudraram">Rudraram</option>
+      <option value="S D Road">S D Road</option>
+      <option value="Saidabad">Saidabad</option>
+      <option value="Saifabad">Saifabad</option>
+      <option value="Sainikpuri">Sainikpuri</option>
+      <option value="Saleem Nagar">Saleem Nagar</option>
+      <option value="Sanath Nagar">Sanath Nagar</option>
+      <option value="Sangareddy">Sangareddy</option>
+      <option value="Sanjeeva Reddy Nagar">Sanjeeva Reddy Nagar</option>
+      <option value="Santosh Nagar">Santosh Nagar</option>
+      <option value="Saroor Nagar">Saroor Nagar</option>
+      <option value="Secunderabad">Secunderabad</option>
+      <option value="Serilingampally">Serilingampally</option>
+      <option value="Shadnagar">Shadnagar</option>
+      <option value="Shahbaad">Shahbaad</option>
+      <option value="Shaikpet">Shaikpet</option>
+      <option value="Shamirpet">Shamirpet</option>
+      <option value="Shamshabad">Shamshabad</option>
+      <option value="Shankarpalli">Shankarpalli</option>
+      <option value="Shanthi Nagar">Shanthi Nagar</option>
+      <option value="Sheriguda">Sheriguda</option>
+      <option value="Siddhartha Nagar">Siddhartha Nagar</option>
+      <option value="Sindhi Colony">Sindhi Colony</option>
+      <option value="Sitaphalmandi">Sitaphalmandi</option>
+      <option value="Sivarampalli">Sivarampalli</option>
+      <option value="Somajiguda">Somajiguda</option>
+      <option value="Sri Nagar Colony">Sri Nagar Colony</option>
+      <option value="Srinagar Colony">Srinagar Colony</option>
+      <option value="Subhash Nagar">Subhash Nagar</option>
+      <option value="Suchitra Road">Suchitra Road</option>
+      <option value="Suraram">Suraram</option>
+      <option value="Tarnaka">Tarnaka</option>
+      <option value="Tellapur">Tellapur</option>
+      <option value="Thimmapur">Thimmapur</option>
+      <option value="Toli Chowki">Toli Chowki</option>
+      <option value="Trimulgherry">Trimulgherry</option>
+      <option value="Tukkuguda">Tukkuguda</option>
+      <option value="Tupran">Tupran</option>
+      <option value="Turkayamjal">Turkayamjal</option>
+      <option value="Uppaguda">Uppaguda</option>
+      <option value="Uppal">Uppal</option>
+      <option value="Upparpally">Upparpally</option>
+      <option value="Vanasthalipuram">Vanasthalipuram</option>
+      <option value="Vattepally">Vattepally</option>
+      <option value="Velimela">Velimela</option>
+      <option value="Venkat Reddy Colony">Venkat Reddy Colony</option>
+      <option value="Venkatapuram">Venkatapuram</option>
+      <option value="Vivekananda Nagar">Vivekananda Nagar</option>
+      <option value="Walker Town">Walker Town</option>
+      <option value="West Marredpally">West Marredpally</option>
+      <option value="Whitefields">Whitefields</option>
+      <option value="Yakhutpura">Yakhutpura</option>
+      <option value="Yapral">Yapral</option>
+      <option value="Yousufguda">Yousufguda</option>
+      <option value="Zahirabad">Zahirabad</option>
+      </select></td>
+
+<td><label name="address">address </label></td>
+<td><input type="text" name="address" /></td></tr>
+<tr>
+<td><label name="landmark">landmark </label></td>
+<td><input type="text" name="landmark" /></td>
+
+<td><label name="apt_pic">apt_pic </label></td>
+<td><input type="file" name="apt_pic" required /></td></tr>
+<tr>
+<td><label name="record_owner">record_owner </label></td>
+<td><input type="text" name="record_owner" /></td>
+
+<td><label name="sales_remainder_date">sales_remainder_date </label></td>
+<td><input type="datetime-local" name="sales_remainder_date" /></td></tr>
+<tr>
+<td><label name="apt_status">apt_status </label></td>
+<td><input type="text" name="apt_status" /></td>
+
+<td><label name="no_of_flats">no_of_flats </label></td>
+<td><input type="text" name="no_of_flats" /></td></tr>
+<tr>
+<td><label name="apt_categoery">apt_categoery </label></td>
+<td><input type="text" name="apt_categoery" /></td>
+
+<td><label name="no_of_blocks">no_of_blocks </label></td>
+<td><input type="text" name="no_of_blocks" /></td></tr>
+<tr>
+<td><label name="primary_contact">primary_contact </label></td>
+<td><input type="text" name="primary_contact" /></td>
+
+<td><label name="primary_contact_number">primary_contact_number </label></td>
+<td><input type="text" name="primary_contact_number" /></td></tr>
+<tr>
+<td><label name="secondary_contact">secondary_contact </label></td>
+<td><input type="text" name="secondary_contact" /></td>
+
+<td><label name="secondary_contact_number">secondary_contact_number </label></td>
+<td><input type="text" name="secondary_contact_number" /></td></tr>
+<tr>
+<td><label name="watchman_name">watchman_name </label></td>
+<td><input type="text" name="watchman_name" /></td>
+
+<td><label name="watchman_contact">watchman_contact </label></td>
+<td><input type="text" name="watchman_contact" /></td></tr>
+<tr>
+<td><label name="total_board_count">total_board_count </label></td>
+<td><input type="text" name="total_board_count" /></td>
+
+<td><label name="distance_from_mainroad_in_km">distance_from_mainroad_in_km </label></td>
+<td><input type="text" name="distance_from_mainroad_in_km" /></td></tr>
+<tr>
+<td><label name="aggrement_sign_date">aggrement_sign_date </label></td>
+<td><input type="text" name="aggrement_sign_date" /></td>
+
+<td><label name="aggrement_start_date">aggrement_start_date </label></td>
+<td><input type="text" name="aggrement_start_date" /></td></tr>
+<tr>
+<td><label name="aggrement_end_date">aggrement_end_date </label></td>
+<td><input type="text" name="aggrement_end_date" /></td>
+
+<td><label name="bank_name">bank_name </label></td>
+<td><input type="text" name="bank_name" /></td></tr>
+<tr>
+<td><label name="bank_branch_name">bank_branch_name </label></td>
+<td><input type="text" name="bank_branch_name" /></td>
+
+<td><label name="account_number">account_number </label></td>
+<td><input type="text" name="account_number" /></td></tr>
+<tr>
+<td><label name="ifsc_code">ifsc_code </label></td>
+<td><input type="text" name="ifsc_code" /></td>
+
+<td><label name="cost_of_A2">cost_of_A2 </label></td>
+<td><input type="text" name="cost_of_A2" /></td></tr>
+<tr>
+<td><label name="cost_of_A3">cost_of_A3 </label></td>
+<td><input type="text" name="cost_of_A3" /></td>
+
+<td><label name="cost_of_2X4">cost_of_2X4 </label></td>
+<td><input type="text" name="cost_of_2X4" /></td></tr>
+<tr>
+<td><label name="cost_of_3X6">cost_of_3X6 </label></td>
+<td><input type="text" name="cost_of_3X6" /></td>
+
+<td><label name="owner_flats">owner_flats </label></td>
+<td><input type="text" name="owner_flats" /></td></tr>
+<tr>
+<td><label name="rented_flats">rented_flats </label></td>
+<td><input type="text" name="rented_flats" /></td>
+
+<td><label name="total_male_count">total_male_count </label></td>
+<td><input type="text" name="total_male_count" /></td></tr>
+<tr>
+<td><label name="total_female_count">total_female_count </label></td>
+<td><input type="text" name="total_female_count" /></td>
+
+<td><label name="male_5_15_years">male_5_15_years </label></td>
+<td><input type="text" name="male_5_15_years" /></td></tr>
+<tr>
+<td><label name="male_16_26_years">male_16_26_years </label></td>
+<td><input type="text" name="male_16_26_years" /></td>
+
+<td><label name="male_27_50_years">male_27_50_years </label></td>
+<td><input type="text" name="male_27_50_years" /></td></tr>
+<tr>
+<td><label name="male_above_50_years">male_above_50_years </label></td>
+<td><input type="text" name="male_above_50_years" /></td>
+
+<td><label name="female_5_15_years">female_5_15_years </label></td>
+<td><input type="text" name="female_5_15_years" /></td></tr>
+<tr>
+<td><label name="female_16_26_years">female_16_26_years </label></td>
+<td><input type="text" name="female_16_26_years" /></td>
+
+<td><label name="female_27_50_years">female_27_50_years </label></td>
+<td><input type="text" name="female_27_50_years" /></td></tr>
+<tr>
+<td><label name="female_above_50_years">female_above_50_years </label></td>
+<td><input type="text" name="female_above_50_years" /></td>
+
+<td><label name="families_with_cars">families_with_cars </label></td>
+<td><input type="text" name="families_with_cars" /></td></tr>
+<tr>
+<td><label name="num_of_families_participate_activity">num_of_families_participate_activity </label></td>
+<td><input type="text" name="num_of_families_participate_activity" /></td></tr>
+<tr>
+<td><label name="people_into_industry_count">people_into_industry_count </label></td>
+<td><input type="text" name="people_into_industry_count" /></td>
+
+<td><label name="male_software">male_software </label></td>
+<td><input type="text" name="male_software" /></td></tr>
+<tr>
+<td><label name="male_civil">male_civil </label></td>
+<td><input type="text" name="male_civil" /></td>
+
+<td><label name="male_business">male_business </label></td>
+<td><input type="text" name="male_business" /></td></tr>
+<tr>
+<td><label name="male_telecom">male_telecom </label></td>
+<td><input type="text" name="male_telecom" /></td>
+
+<td><label name="male_construction">male_construction </label></td>
+<td><input type="text" name="male_construction" /></td></tr>
+<tr>
+<td><label name="male_sales">male_sales </label></td>
+<td><input type="text" name="male_sales" /></td>
+
+<td><label name="male_education">male_education </label></td>
+<td><input type="text" name="male_education" /></td></tr>
+<tr>
+<td><label name="male_manufacturing">male_manufacturing </label></td>
+<td><input type="text" name="male_manufacturing" /></td>
+
+<td><label name="male_media">male_media </label></td>
+<td><input type="text" name="male_media" /></td></tr>
+<tr>
+<td><label name="male_household">male_household </label></td>
+<td><input type="text" name="male_household" /></td>
+
+<td><label name="female_software">female_software </label></td>
+<td><input type="text" name="female_software" /></td></tr>
+<tr>
+<td><label name="female_civil">female_civil </label></td>
+<td><input type="text" name="female_civil" /></td>
+
+<td><label name="female_business">female_business </label></td>
+<td><input type="text" name="female_business" /></td></tr>
+<tr>
+<td><label name="female_telecom">female_telecom </label></td>
+<td><input type="text" name="female_telecom" /></td>
+
+<td><label name="female_construction">female_construction </label></td>
+<td><input type="text" name="female_construction" /></td></tr>
+<tr>
+<td><label name="female_sales">female_sales </label></td>
+<td><input type="text" name="female_sales" /></td>
+
+<td><label name="female_education">female_education </label></td>
+<td><input type="text" name="female_education" /></td></tr>
+<tr>
+<td><label name="female_manufacturing">female_manufacturing </label></td>
+<td><input type="text" name="female_manufacturing" /></td>
+
+<td><label name="female_media">female_media </label></td>
+<td><input type="text" name="female_media" /></td></tr>
+<tr>
+<td><label name="female_household">female_household </label></td>
+<td><input type="text" name="female_household" /></td>
+
+<td><label name="avg_maintenance_cost_per_house">avg_maintenance_cost_per_house </label></td>
+<td><input type="text" name="avg_maintenance_cost_per_house" /></td></tr>
+
+</table><br>
+      <input type="submit"/>
+    </form>
+  </body>
+</html>

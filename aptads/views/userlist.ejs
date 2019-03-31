@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title><%= name %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='http://bootswatch.com/sandstone/bootstrap.min.css' />
+  </head>
+  <body>
+  this are the values in db<br>
+<table>
+    <% userlist.forEach(function(item) { %>
+    
+    <tr>
+    <td><%= item.name %> </td><td><%= item.email%></td>
+    </tr>
+    
+    <% });%>
+</table>
+
+  </body>
+</html>

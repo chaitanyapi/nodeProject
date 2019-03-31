@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Title</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='http://bootswatch.com/sandstone/bootstrap.min.css' />
+    
+  </head>
+
+  <body>
+<button type="button">Related Boards</button>
+  <h3>Here are the details related to the apartment <%= detail[0].aptname%>.</h3>   <br>
+
+name : <%= detail[0].aptname%><br>
+picture : <br><img src="http://localhost/getfile/<%=detail[0].apt_pic%>" width="150" height="200"><br>
+code : <%= detail[0].apt_code%>
+<br><br>
+<a href="/aptlist"><button type="button">Back</button></a>
+<a href="/aptdelete/<%=detail[0].apt_code%>"><button type="button">Delete</button></a>
+  </body>
+</html>

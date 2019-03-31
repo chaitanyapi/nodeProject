@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>chaitanya</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='http://bootswatch.com/sandstone/bootstrap.min.css' />
+    
+  </head>
+  <body>
+<% if (data==="1") {%>
+  <h3>These are list of Employees. Click on any name to check the details.</h3><br>
+
+<table>
+<tr style="background-color:green"><td>Employee Name</td><td>Employee pic</td><td>Area</td><td>Number of Flats</td><td>Contact Person</td><td>Contact Number</td></tr>
+    <% emplist.forEach(function(item) { %>
+    
+    <tr>
+    <td><a href="/empdetail/<%=item._id%>"><%= item.empname %> </td></a><td><%= item.apt_code%></td><td><%= item.area %></td><td><%= item.no_of_flats %></td><td><%= item.primary_contact %></td><td><%= item.primary_contact_number %></td>
+    </tr>
+    
+    <% });%>
+
+</table><br>
+<%}else{%>
+<h3><%=note%>. Please add one.</h3>
+<%}%>
+<a href="/addemp"><button type="button">Add Employee</button></a>
+
+  </body>
+</html>
